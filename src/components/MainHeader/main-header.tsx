@@ -1,28 +1,33 @@
-import logoImg from '@/src/assets/icons/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import logoImg from '@/src/assets/icons/logo.png'
+
+import MainHeaderBackground from './main-header-background'
 import styles from './main-header.module.css'
 
 const MainHeader = () => {
   return (
-    <header>
-      <Link href="/">
-        <Image src={logoImg} alt="Bowl with veggies" priority />
-        DajeTheFood
-      </Link>
+    <>
+      <MainHeaderBackground />
+      <header className={styles.wrapper}>
+        <Link href="/" className={styles.logo}>
+          <Image src={logoImg} alt="Bowl with veggies" priority />
+          <h1>Da Fuddo</h1>
+        </Link>
 
-      <nav>
-        <ul>
-          <li>
-            <Link href="/meals">Browse Meals</Link>
-          </li>
-          <li>
-            <Link href="/community">Join Community</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <nav className={styles.nav}>
+          <ul>
+            <li>
+              <Link href="/meals">Browse Meals</Link>
+            </li>
+            <li>
+              <Link href="/community">Join Community</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
   )
 }
 

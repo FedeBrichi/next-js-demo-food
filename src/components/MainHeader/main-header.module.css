@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+.logo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  margin-right: 64px;
+}
+
+.nav a {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 16px;
+  font-size: 24px;
+  transition: all 0.1s linear;
+}
+
+.nav a:hover,
+.nav a:active,
+.logo:hover {
+  background: linear-gradient(90deg, #ffd7d6, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 16px #e98483);
+  text-shadow: 0 0 16px #ffd4d3;
+}

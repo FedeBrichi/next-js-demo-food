@@ -1,9 +1,17 @@
 import type { Metadata } from 'next'
+import { Quicksand } from 'next/font/google'
 import './globals.css'
 import { MainHeader } from '@/src/components/MainHeader'
 
+const font = Quicksand({
+  weight: ['400', '500', '600', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Daje The Food',
+  title: 'Da Fuddo',
   description: 'Various dishes collection',
 }
 
@@ -14,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={font.className}>
         <MainHeader />
         {children}
       </body>
