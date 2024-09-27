@@ -1,0 +1,22 @@
+.active {
+  filter: drop-shadow(0 0 16px #e98483);
+  text-shadow: 0 0 16px #ffd4d3;
+}
+
+.link {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 16px;
+  font-size: 24px;
+  transition: all 0.1s linear;
+}
+
+.link:hover,
+.link:active {
+  background: linear-gradient(90deg, #f8c7c6, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 16px #e98483);
+  text-shadow: 0 0 16px #ffd4d3;
+}

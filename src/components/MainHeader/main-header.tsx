@@ -5,6 +5,7 @@ import logoImg from '@/src/assets/icons/logo.png'
 
 import MainHeaderBackground from './main-header-background'
 import styles from './main-header.module.css'
+import { NavLink } from '../NavLink'
 
 const MainHeader = () => {
   return (
@@ -19,10 +20,10 @@ const MainHeader = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href="/meals">Browse Meals</Link>
+              <NavLink href="/meals">Browse Meals</NavLink>
             </li>
             <li>
-              <Link href="/community">Join Community</Link>
+              <NavLink href="/community">Join Community</NavLink>
             </li>
           </ul>
         </nav>

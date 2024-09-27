@@ -35,18 +35,8 @@
   margin-right: 64px;
 }
 
-.nav a {
-  color: #fff;
-  font-weight: 600;
-  border-radius: 16px;
-  font-size: 24px;
-  transition: all 0.1s linear;
-}
-
-.nav a:hover,
-.nav a:active,
 .logo:hover {
-  background: linear-gradient(90deg, #ffd7d6, #fff);
+  background: linear-gradient(90deg, #f8c7c6, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
