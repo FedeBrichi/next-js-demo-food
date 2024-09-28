@@ -1,12 +1,13 @@
 import Link from 'next/link'
 
-const Share = () => {
+// TODO Show different meals from different users
+const Community = () => {
   return (
     <div>
-      Community
+      Community Page
       <Link href="/">Meals</Link>
     </div>
   )
 }
 
-export default Share
+export default Community

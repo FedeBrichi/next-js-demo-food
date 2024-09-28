@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logoImg from '@/src/assets/icons/logo.png'
+import logoImg from '@/src/assets/images/logo.png'
 
 import MainHeaderBackground from './main-header-background'
 import styles from './main-header.module.css'

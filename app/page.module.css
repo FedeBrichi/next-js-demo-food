@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  margin: 64px 32px;
+}
+
+.carousel {
+  width: 300px;
+  height: 300px;
+}
