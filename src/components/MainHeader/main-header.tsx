@@ -11,7 +11,7 @@ const MainHeader = () => {
     <header className={styles.wrapper}>
       <Link href="/" className={styles.logo}>
         <Image src={logoImg} alt="Bowl with veggies" priority />
-        <h1>Da Fuddo</h1>
+        <h1 className={styles.title}>Da Fuddo</h1>
       </Link>
 
       <nav className={styles.nav}>
@@ -24,6 +24,7 @@ const MainHeader = () => {
           </li>
         </ul>
       </nav>
+      {/* TODO add hamburger menu */}
     </header>
   )
 }
