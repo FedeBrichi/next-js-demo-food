@@ -1,0 +1,10 @@
+.meal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  justify-items: center;
+  grid-gap: 32px;
+  margin: 8px auto;
+  list-style: none;
+  padding: 0 32px;
+  width: 100%;
+}

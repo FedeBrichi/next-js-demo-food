@@ -2,7 +2,7 @@ import sql from 'better-sqlite3'
 
 const db = sql('meals.db')
 
-type Meal = {
+export type Meal = {
   id: string
   title: string
   slug: string

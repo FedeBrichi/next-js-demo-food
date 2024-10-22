@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  animation: filter;
+}
+
+.wrapper:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px #e98483);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 16px;
+}
+.summary {
+  font-size: 16px;
+}
+
+.content a {
+  margin-left: auto;
+}
+
+.content .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.content .creator {
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
+}

@@ -1,5 +1,6 @@
 import { getMeals } from '@/lib/meals'
-import Link from 'next/link'
+import { MealCard } from '@/src/components/MealCard'
+import styles from './page.module.css'
 
 const Meals = async () => {
   const meals = await getMeals()
@@ -7,10 +8,9 @@ const Meals = async () => {
   console.log('Meals', meals)
 
   return (
-    <div>
-      Meals
-      {meals.map(({ title, id }) => (
-        <div key={id}>{title}</div>
+    <div className={styles['meal-list']}>
+      {meals.map((meal) => (
+        <MealCard key={meal.id} meal={meal} />
       ))}
     </div>
   )
