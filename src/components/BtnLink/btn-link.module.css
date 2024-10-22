@@ -1,0 +1,24 @@
+.cta {
+  background: linear-gradient(100deg, #da3a37, #fe5b587c);
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 16px;
+  animation: pulse-background 4s alternate infinite;
+  width: max-content;
+}
+.cta:hover {
+  background: linear-gradient(100deg, #d82b28, #e66563, #da3a37, #ff322fc3);
+  background-size: 300% 300%;
+  filter: drop-shadow(0 0 8px #e98483);
+}
+
+@keyframes pulse-background {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
